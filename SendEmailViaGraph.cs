@@ -91,7 +91,7 @@ namespace SendEmailViaGraph
                     }
                 };
 
-                // Send email
+                // Send email via office 365 valid user
                 await graphClient.Users["....onmicrosoft.com"].SendMail.PostAsync(body);
                 return new OkObjectResult("Email sent successfully.");
             }
